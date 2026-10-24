@@ -1,0 +1,19 @@
+{
+ "layered": {
+  "tp": 11,
+  "fp": 12,
+  "n_pos": 16,
+  "n_neg": 230,
+  "missed": [
+   "tag_partial",
+   "fullwidth",
+   "base64",
+   "spaced_out",
+   "diluted"
+  ]
+ },
+ "d4_global": {
+  "tp": 7,
+  "fp": 109
+ }
+}
