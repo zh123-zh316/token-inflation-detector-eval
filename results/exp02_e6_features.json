@@ -1,0 +1,44 @@
+{
+ "token_per_char": {
+  "auc": 0.5389,
+  "best_th": 1.75,
+  "tpr": 0.25,
+  "fpr": 0.0,
+  "direction": 1
+ },
+ "bytes_per_char": {
+  "auc": 0.5249,
+  "best_th": 1.3823529411764706,
+  "tpr": 0.5625,
+  "fpr": 0.3261,
+  "direction": -1
+ },
+ "non_ascii_ratio": {
+  "auc": 0.5539,
+  "best_th": 0.38235294117647056,
+  "tpr": 0.5625,
+  "fpr": 0.3826,
+  "direction": -1
+ },
+ "invisible_ratio": {
+  "auc": 0.625,
+  "best_th": 0.0,
+  "tpr": 0.25,
+  "fpr": 0.0,
+  "direction": 1
+ },
+ "has_tag_block": {
+  "auc": 0.5625,
+  "best_th": 0.0,
+  "tpr": 0.125,
+  "fpr": 0.0,
+  "direction": 1
+ },
+ "script_mixing": {
+  "auc": 0.5851,
+  "best_th": 0.0,
+  "tpr": 0.1875,
+  "fpr": 0.0174,
+  "direction": 1
+ }
+}
