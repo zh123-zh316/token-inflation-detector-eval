@@ -1,0 +1,346 @@
+{
+ "base_tokens": 22,
+ "base_chars": 102,
+ "carriers": [
+  {
+   "id": "C17",
+   "name": "diluted",
+   "desc": "稀释在长文本中（规避策略）",
+   "chars": 2702,
+   "tokens": 413,
+   "token_inflation": 18.77,
+   "token_per_char": 0.1528,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": true,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": false,
+    "D5_structural": false,
+    "D6_hardened": true,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C01",
+   "name": "plain",
+   "desc": "明文（对照组）",
+   "chars": 102,
+   "tokens": 22,
+   "token_inflation": 1.0,
+   "token_per_char": 0.2157,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": true,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": false,
+    "D5_structural": false,
+    "D6_hardened": true,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C05",
+   "name": "tag_partial",
+   "desc": "只把关键词映射 Tag（规避策略）",
+   "chars": 102,
+   "tokens": 22,
+   "token_inflation": 1.0,
+   "token_per_char": 0.2157,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": true,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": false,
+    "D5_structural": false,
+    "D6_hardened": true,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C10",
+   "name": "rlo",
+   "desc": "双向控制符 RLO 包裹",
+   "chars": 104,
+   "tokens": 26,
+   "token_inflation": 1.18,
+   "token_per_char": 0.25,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": true,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": false,
+    "D5_structural": true,
+    "D6_hardened": true,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C16",
+   "name": "sparse_zw",
+   "desc": "稀疏插零宽（规避策略）",
+   "chars": 115,
+   "tokens": 47,
+   "token_inflation": 2.14,
+   "token_per_char": 0.4087,
+   "zw_ratio": 0.113,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": true,
+    "D4_token_inflate": false,
+    "D5_structural": true,
+    "D6_hardened": true,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C14",
+   "name": "spaced_out",
+   "desc": "每字符间插普通空格",
+   "chars": 203,
+   "tokens": 106,
+   "token_inflation": 4.82,
+   "token_per_char": 0.5222,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": false,
+    "D5_structural": false,
+    "D6_hardened": false,
+    "D7_full": false
+   }
+  },
+  {
+   "id": "C11",
+   "name": "base64",
+   "desc": "Base64 编码嵌入",
+   "chars": 156,
+   "tokens": 98,
+   "token_inflation": 4.45,
+   "token_per_char": 0.6282,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": false,
+    "D5_structural": false,
+    "D6_hardened": false,
+    "D7_full": false
+   }
+  },
+  {
+   "id": "C15",
+   "name": "leetspeak",
+   "desc": "数字替换字母",
+   "chars": 102,
+   "tokens": 76,
+   "token_inflation": 3.45,
+   "token_per_char": 0.7451,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": false,
+    "D5_structural": false,
+    "D6_hardened": false,
+    "D7_full": false
+   }
+  },
+  {
+   "id": "C08",
+   "name": "homoglyph_unseen",
+   "desc": "表外同形字替换",
+   "chars": 102,
+   "tokens": 82,
+   "token_inflation": 3.73,
+   "token_per_char": 0.8039,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": false,
+    "D5_structural": false,
+    "D6_hardened": false,
+    "D7_full": false
+   }
+  },
+  {
+   "id": "C07",
+   "name": "homoglyph_known",
+   "desc": "表内同形字替换",
+   "chars": 102,
+   "tokens": 86,
+   "token_inflation": 3.91,
+   "token_per_char": 0.8431,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": false,
+    "D5_structural": false,
+    "D6_hardened": true,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C02",
+   "name": "zero_width_full",
+   "desc": "每字符间插零宽空格",
+   "chars": 203,
+   "tokens": 189,
+   "token_inflation": 8.59,
+   "token_per_char": 0.931,
+   "zw_ratio": 0.4975,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": true,
+    "D4_token_inflate": true,
+    "D5_structural": true,
+    "D6_hardened": true,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C12",
+   "name": "zw_homo_mix",
+   "desc": "零宽 + 表外同形混合",
+   "chars": 203,
+   "tokens": 192,
+   "token_inflation": 8.73,
+   "token_per_char": 0.9458,
+   "zw_ratio": 0.4975,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": true,
+    "D4_token_inflate": true,
+    "D5_structural": true,
+    "D6_hardened": false,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C03",
+   "name": "zero_width_binary",
+   "desc": "零宽二进制编码",
+   "chars": 918,
+   "tokens": 906,
+   "token_inflation": 41.18,
+   "token_per_char": 0.9869,
+   "zw_ratio": 1.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": true,
+    "D4_token_inflate": true,
+    "D5_structural": true,
+    "D6_hardened": false,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C09",
+   "name": "fullwidth",
+   "desc": "全角化",
+   "chars": 102,
+   "tokens": 179,
+   "token_inflation": 8.14,
+   "token_per_char": 1.7549,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": true,
+    "D5_structural": true,
+    "D6_hardened": true,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C13",
+   "name": "tag_in_comment",
+   "desc": "Tag 藏在 HTML 注释里",
+   "chars": 111,
+   "tokens": 309,
+   "token_inflation": 14.05,
+   "token_per_char": 2.7838,
+   "zw_ratio": 0.0,
+   "has_tag": true,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": true,
+    "D3_zw_density": false,
+    "D4_token_inflate": true,
+    "D5_structural": true,
+    "D6_hardened": true,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C04",
+   "name": "tag_full",
+   "desc": "全部映射到 Unicode Tag 块",
+   "chars": 102,
+   "tokens": 306,
+   "token_inflation": 13.91,
+   "token_per_char": 3.0,
+   "zw_ratio": 0.0,
+   "has_tag": true,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": true,
+    "D3_zw_density": false,
+    "D4_token_inflate": true,
+    "D5_structural": true,
+    "D6_hardened": true,
+    "D7_full": true
+   }
+  },
+  {
+   "id": "C06",
+   "name": "vs_full",
+   "desc": "变体选择符全编码",
+   "chars": 103,
+   "tokens": 409,
+   "token_inflation": 18.59,
+   "token_per_char": 3.9709,
+   "zw_ratio": 0.0,
+   "has_tag": false,
+   "verdicts": {
+    "D1_keyword": false,
+    "D2_tagblock": false,
+    "D3_zw_density": false,
+    "D4_token_inflate": true,
+    "D5_structural": true,
+    "D6_hardened": false,
+    "D7_full": true
+   }
+  }
+ ]
+}
