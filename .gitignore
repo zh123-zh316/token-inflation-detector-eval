@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境与缓存
+.venv/
+wheelcache/
+tmp/
+chrome-profile/
+
+# 整个 lab 目录（仓库文件已复制到根目录，lab 只是本地工作目录）
+lab/
+
+# 其他项目目录（不属于本仓库）
+data/
+dsh-security-writing/
+research/
+
+# 临时文件
+*.zip
+node-ver.txt
+test_chart.png
+get-pip.py
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
